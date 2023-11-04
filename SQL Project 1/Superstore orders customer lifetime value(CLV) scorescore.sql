@@ -19,7 +19,7 @@ cte3 as(select min(recency) as min_recency,
 	       min(monetary) as min_monetary,
 	       max(monetary) as max_monetary
 	from cte2),
---applying formula (xi – min(x)) / (max(x) – min(x)) to normalize the numbers along with i multiplied weightages in 4th cte
+--applying formula (xi â€“ min(x)) / (max(x) â€“ min(x)) to normalize the numbers along with i multiplied weightages in 4th cte
 --weightages depends on client or company 
 --for me:
 --recency 0.2
